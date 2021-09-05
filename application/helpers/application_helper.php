@@ -26,3 +26,12 @@ function get_page_title()
 
     return $CI->config->item('page_title');
 }
+
+function load_view_auth($viewName, $data = null)
+{
+    $CI = get_instance();
+
+    $CI->load->view('templates/head', $data);
+    $CI->load->view($viewName, $data);
+    $CI->load->view('templates/foot', $data);
+}
