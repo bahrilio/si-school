@@ -1,8 +1,8 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #506D84;">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url(); ?>">
         <div class="sidebar-brand-icon ">
             <i class="fas fa-fw fa-school"></i>
         </div>
@@ -33,6 +33,7 @@
                 <h6 class="collapse-header">Menu:</h6>
                 <a class="collapse-item" href="<?= base_url('student'); ?>">Students Data</a>
                 <a class="collapse-item" href="<?= base_url('student/add'); ?>">Add Data</a>
+                <a class="collapse-item" href="<?= base_url('student/report'); ?>">Report Students Data</a>
             </div>
         </div>
     </li>
@@ -51,6 +52,7 @@
                 <h6 class="collapse-header">Menu:</h6>
                 <a class="collapse-item" href="<?= base_url('teacher'); ?>">Teacher Data</a>
                 <a class="collapse-item" href="<?= base_url('teacher/add'); ?>">Add Data</a>
+                <a class="collapse-item" href="<?= base_url('teacher/report'); ?>">Report Teacher Data</a>
             </div>
         </div>
     </li>
@@ -84,7 +86,7 @@
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">M.BAHRIL ILMI</span>
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">My Profile</span>
                         <img class="img-profile rounded-circle" src="https://avatars.githubusercontent.com/u/55430010?v=4">
                     </a>
                     <!-- Dropdown - User Information -->

@@ -18,6 +18,9 @@
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>assets/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- style boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <!-- Data Table -->
     <link href="<?= base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 

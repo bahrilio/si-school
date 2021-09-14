@@ -52,3 +52,12 @@ function login_required()
         redirect('auth/login');
     }
 }
+
+function load_view_report($viewName, $data = null)
+{
+    $CI = get_instance();
+
+    $CI->load->view($viewName, $data);
+   
+
+}

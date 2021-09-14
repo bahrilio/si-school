@@ -98,4 +98,13 @@ class Student extends CI_Controller
 			}
 		}
 	}
+	
+	public function report()
+	{
+		$students = $this->Student_model->getAllStudent();
+		$data['students'] = $students;
+
+		set_page_title('SI SCHOOL|Student|Report');
+		load_view_report('student/report', $data);
+	}
 }

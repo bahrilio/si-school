@@ -101,4 +101,12 @@ class Teacher extends CI_Controller
             }
         }
     }
+    public function report()
+	{
+		$teachers = $this->Teacher_model->getAllTeacher();
+		$data['teachers'] = $teachers;
+
+		set_page_title('SI SCHOOL|Teacher|Report');
+		load_view_report('teacher/report', $data);
+	}
 }

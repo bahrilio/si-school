@@ -2,7 +2,8 @@
 <h1 class="h3 mb-4 text-gray-800">Students Data</h1>
 
 <div class="mb-2 d-flex justify-content-end">
-    <a href="<?= base_url('student/add'); ?>" class="btn btn-primary">Add Data</a>
+    <a href="<?= base_url('student/add'); ?>" class="btn btn-primary mr-3 ">Add Data</a>
+    <a href="<?= base_url('student/report'); ?>" target="blank" class="btn btn-success ">Report Data</a>
 </div>
 
 <?= $this->session->flashdata('message'); ?>
@@ -29,13 +30,11 @@
                 <td><?= $student['address']; ?></td>
                 <td><?= $student['email']; ?></td>
                 <td>
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-                        <a href="<?= base_url('student/edit/'.$student['id']); ?>"  type="button"  class="btn btn-warning btn-sm">Edit</a>
+                        <a href="<?= base_url('student/edit/'.$student['id']); ?>" class="btn btn-warning btn-sm">Edit</a>
                         <form action="<?= base_url('student/delete'); ?>" class="d-inline" method="post">
                             <button onclick="return confirm('do you want to delete this data ?')" type="submit" class="btn btn-danger btn-sm">Hapus</button>
                             <input type="hidden" name="id" value="<?= $student['id']; ?>">
                         </form>
-                    </div>
                 </td>
             </tr>
         <?php endforeach; ?>
