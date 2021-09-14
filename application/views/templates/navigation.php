@@ -33,7 +33,7 @@
                 <h6 class="collapse-header">Menu:</h6>
                 <a class="collapse-item" href="<?= base_url('student'); ?>">Students Data</a>
                 <a class="collapse-item" href="<?= base_url('student/add'); ?>">Add Data</a>
-                <a class="collapse-item" href="<?= base_url('student/report'); ?>">Report Students Data</a>
+                <a class="collapse-item" target="blank" href="<?= base_url('student/report'); ?>">Report Students Data</a>
             </div>
         </div>
     </li>
@@ -52,7 +52,7 @@
                 <h6 class="collapse-header">Menu:</h6>
                 <a class="collapse-item" href="<?= base_url('teacher'); ?>">Teacher Data</a>
                 <a class="collapse-item" href="<?= base_url('teacher/add'); ?>">Add Data</a>
-                <a class="collapse-item" href="<?= base_url('teacher/report'); ?>">Report Teacher Data</a>
+                <a class="collapse-item" target="blank" href="<?= base_url('teacher/report'); ?>">Report Teacher Data</a>
             </div>
         </div>
     </li>
