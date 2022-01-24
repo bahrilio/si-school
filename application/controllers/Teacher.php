@@ -7,6 +7,9 @@ class Teacher extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if(is_logged_in() == false){
+            redirect('auth/login');
+        }
         $this->load->model('Teacher_model');
     }
 
